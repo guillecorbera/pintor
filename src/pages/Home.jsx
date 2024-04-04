@@ -21,7 +21,7 @@ const Home = () => {
                  {/* <img className="imagen-home" src="/src/images/sergey-semin-Y0WXj3xqJz0-unsplash.png" alt="Imagen"  /> */}
                  <picture>
                     {/* Utiliza la imagen en formato WebP como fuente principal */}
-                    <source className="imagen-home" srcSet="/cubos-pintura-suelo copia.webp" type="image/webp" />
+                    <source className="imagen-home" srcSet="/cubos-pintura-suelo.webp" type="image/webp" />
                     {/* Agrega una imagen de respaldo en formato JPEG */}
                     <img className="imagen-home" src="/cubos-pintura-suelo.jpg" alt="latas de pintura" />
                 </picture>
