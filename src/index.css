@@ -1,0 +1,112 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* line-height: 1.5; */
+  /* font-weight: 400; */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+	
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #164a74;
+  font-size: clamp(1.125rem, 0.8879rem + 0.4946vw, 1.5rem);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  /* font-weight: 500; */
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  /* color: #385f81; */
+  margin: 0;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  overflow: visible;
+  /* background-image: url('src/images/cubos-pintura-suelo.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center center; 
+  overflow-x: hidden; */
+
+
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-family: inherit;
+  background-color: #29bfff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #c2c4f3;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #0c385e;
+    background-color: #ffffff;
+  }
+
+  button {
+    background-color: #29bfff;
+  }
+}
+
+
+
+/* Estilos CSS para la barra de desplazamiento */
+/* Este estilo se aplicará a todos los navegadores modernos excepto a Internet Explorer */
+::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo de la barra de desplazamiento en Firefox */
+/* Se puede ajustar el color de la barra de desplazamiento */
+/* Para hacerlo siempre visible, simplemente quita el hover */
+/* Si necesitas que se vea igual en todos los navegadores, debes ajustar los estilos para cada uno */
+/* Y debes tener en cuenta que algunos navegadores no admiten personalización de la barra de desplazamiento */
+/* Por lo tanto, es posible que la visibilidad siempre visible no funcione en todos los navegadores */
+/* Por ejemplo, los navegadores basados en WebKit (Chrome, Safari) no soportan un estilo completamente personalizado */
+/* En esos casos, la barra de desplazamiento seguirá siendo oculta en algunos casos */
+/* Tendrías que experimentar con diferentes combinaciones de estilos para obtener el comportamiento deseado */
+/* Pero esta es una aproximación que funcionaría en muchos casos */
+/* Puedes adaptarla según tus necesidades específicas */
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5) rgba(0, 0, 0, 0);
+}
+
+.scrollbar:hover {
+  scrollbar-color: rgba(155, 155, 155, 0.5) rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para el riel de la barra de desplazamiento */
+/* Se puede ajustar el color del riel de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Color de fondo del riel */
+}
+
+/* Estilo para el pulgar de la barra de desplazamiento */
+/* Se puede ajustar el color del pulgar de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5); /* Color del pulgar */
+  border-radius: 6px; /* Bordes redondeados del pulgar */
+}

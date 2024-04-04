@@ -1,0 +1,312 @@
+.galeria-container {
+	/* margin-top: 90px; */
+	animation: fadeIn 0.5s ease-in forwards; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	scroll-snap-type: y mandatory;
+	h2 {
+		margin-top: 90px;
+		margin-bottom: 1px; 
+	}
+	  
+	p {
+		margin-top: 1px; 
+		text-align: center;
+	}
+
+  }
+
+  @keyframes fadeIn {
+	from {
+	  opacity: 0; 
+	}
+	to {
+	  opacity: 1;
+	  
+	}
+  } 
+
+  .overlay {
+	position: absolute;
+	top: 10px; 
+	left: 10px;
+	height: 35px; 
+	width: auto;
+	background-color: rgba(0, 0, 0, 0.5); 
+	color: white;
+	padding: 5px 5px 5px 5px; 
+	border-radius: 5px; 
+
+  }
+
+
+/* PARA MOVILES */
+
+@media only screen and (max-width: 767px) {
+	.galeria-container {
+	  margin: 0 auto; 
+	  p {
+		padding: 5px;
+	  }
+	}
+
+	.card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		width: 320px;
+			/* width: 1080px; */
+		height: 640px;
+		border-radius: 10px;
+		background: linear-gradient(315deg, #818e8d, #99a9a8);
+		box-shadow:  -5px -5px 10px #7e8b8a,
+					 5px 5px 10px #a0b1b0;
+	  }
+
+	.texto {
+		width: 360px;
+		color: #333;
+		text-align: center; /* Alineación del texto al centro */
+		padding: 10px 30px 10px; /* Espacio entre el texto y el slider */
+		box-sizing: border-box;
+		
+		}
+	
+	  
+	  .slider-container {
+		width: 80%; 
+	  }
+	  
+	 	.slider-container img {
+		border-radius: 10px;
+		width: 100%; 
+		height: auto; 
+	  }
+	
+	  .image-container {
+		scroll-snap-align: start;
+		position: relative;
+	  }
+
+}
+  
+
+/* PARA TABLETS */
+
+
+  @media only screen and (min-width: 768px) and
+  						(max-width: 1023px)							
+						 {
+							  .galeria-container {
+								  /* display: flex; */
+								  width: 700px;
+								  /* max-width: 1px;  */
+								  margin: 0 auto; /* Centrar el contenedor en pantallas grandes */
+							  }
+						  
+						  .card {
+							  display: flex;
+							  flex-direction: row;
+							  align-items: center;
+							  /* justify-content: space-between; */
+							  /* width: 320px; */
+							  width: 700px;
+							  height: 450px;
+							  border-radius: 10px;
+							  background: linear-gradient(315deg, #818e8d, #99a9a8);
+							  box-shadow:  -5px -5px 10px #7e8b8a,
+										   5px 5px 10px #a0b1b0;
+							}
+						  
+							/* .slider-container {
+							  width: auto; 
+							} */
+						  
+							.texto {
+							  /* display: block; */
+							  /* font-family: 'Lato', sans-serif; */
+							  /* font-size: 24px; */
+							  width: 50%;
+							  color: #333;
+
+							  text-align: center; /* Alineación del texto al centro */
+							  /* padding: 10px 30px 10px 10px;  */
+							  padding: 30px;
+							  /* box-sizing: border-box; */
+							  }
+						  
+							  .slider-container {
+								  width: 35%; 
+								}
+							  
+						  
+							.slider-container img {
+							  position: relative;
+							  border-radius: 10px;
+							  width: 100%; 
+							  /* height: 90%;  */
+							}
+						  
+							.image-container {
+							  scroll-snap-align: start;
+							  position: relative;
+							  width: auto;
+							}
+						  
+						  
+  }
+
+
+  /* PARA AIRPADS */
+
+  @media only screen and (min-width: 1024px) and (max-width: 1439px)							
+{
+	.galeria-container {
+		/* display: flex; */
+		width: 1280px;
+		/* max-width: 1px;  */
+		margin: 0 auto; /* Centrar el contenedor en pantallas grandes */
+	}
+
+.card {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	/* justify-content: space-between; */
+	/* width: 320px; */
+	width: 1080px;
+	height: 540px;
+	border-radius: 10px;
+	background: linear-gradient(315deg, #818e8d, #99a9a8);
+	box-shadow:  -5px -5px 10px #7e8b8a,
+				 5px 5px 10px #a0b1b0;
+  }
+
+  /* .slider-container {
+	width: auto; 
+  } */
+
+  .texto {
+	/* display: block; */
+	/* font-family: 'Lato', sans-serif; */
+	/* font-size: 24px; */
+	width: 50%;
+	color: #333;
+	text-align: center; /* Alineación del texto al centro */
+	/* padding: 10px 30px 10px 10px;  */
+	padding: 30px;
+	/* box-sizing: border-box; */
+	}
+
+	.slider-container {
+		width: 35%; 
+	  }
+	
+
+  .slider-container img {
+	position: relative;
+	border-radius: 10px;
+	width: 100%; 
+	/* height: 90%;  */
+  }
+
+  .image-container {
+	scroll-snap-align: start;
+	position: relative;
+	width: auto;
+  }
+
+
+}
+
+
+
+
+
+/* PARA ORDENADORES CON pantallas minimo 1440px */
+
+
+@media only screen and (min-width: 1440px)							
+{
+
+		.galeria-container {
+			/* display: flex; */
+			width: 1440px;
+			/* max-width: 1px;  */
+			margin: 0 auto; /* Centrar el contenedor en pantallas grandes */
+		}
+	
+	.card {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		/* justify-content: space-between; */
+		/* width: 320px; */
+		width: 1080px;
+		height: 540px;
+		border-radius: 10px;
+		background: linear-gradient(315deg, #818e8d, #99a9a8);
+		box-shadow:  -5px -5px 10px #7e8b8a,
+					 5px 5px 10px #a0b1b0;
+	  }
+	
+	  /* .slider-container {
+		width: auto; 
+	  } */
+	
+	  .texto {
+		/* display: block; */
+		/* font-family: 'Lato', sans-serif; */
+		/* font-size: 24px; */
+		width: 50%;
+		color: #333;
+		text-align: center; /* Alineación del texto al centro */
+		/* padding: 10px 30px 10px 10px;  */
+		padding: 30px;
+		/* box-sizing: border-box; */
+		}
+	
+		.slider-container {
+			width: 35%; 
+		  }
+		
+	
+	  .slider-container img {
+		position: relative;
+		border-radius: 10px;
+		width: 100%; 
+		/* height: 90%;  */
+	  }
+	
+	  .image-container {
+		scroll-snap-align: start;
+		position: relative;
+		width: auto;
+	  }
+	
+	
+}
+
+/* BOTON PARA IR AL PRINCIPIO  DE LA GALERIA EN TODOS LOS DISPOSITIVOS */
+ 
+  
+  .go-to-top-button {
+	/* width: 10px; */
+	/* height: 30px; */
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #007bff;
+	color: white;
+	padding: 15px 20px;
+	/* padding: 20px; */
+	border-radius: 50%;
+	cursor: pointer;
+  }
+  
+  .go-to-top-button:hover {
+	background-color: #0056b3;
+  }

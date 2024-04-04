@@ -1,0 +1,119 @@
+.navbar {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    
+    top: 0;
+    /* height: 80px; */
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  /* .navbar-logo a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+  }
+   */
+  .navbar-links {
+    display: flex;
+  }
+  
+  .navbar-links a {
+    margin-right: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+
+  }
+  
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+  }
+
+  /* Estilos por defecto para todos los dispositivos */
+
+/* Estilos para dispositivos móviles (hasta 767px) */
+
+@media only screen and (max-width: 767px) {
+
+
+  .navbar-links {
+    font-size: 10px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #4c4b4b;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .navbar-links.active {
+    top:50px;
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+
+
+}
+
+/* Estilos para tablets (768px - 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+
+  .navbar-links {
+    font-size: 10px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+
+
+
+
+}
+
+/* Estilos para ordenadores (a partir de 992px) */
+@media only screen and (min-width: 992px) {
+}
+
+.navbar-logo{
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img{
+  border-radius: 50%;
+  margin-right: 15px;
+}
