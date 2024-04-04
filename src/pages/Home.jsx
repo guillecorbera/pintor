@@ -19,7 +19,15 @@ const Home = () => {
             </div>
             <div className="home-imagen">
                  {/* <img className="imagen-home" src="/src/images/sergey-semin-Y0WXj3xqJz0-unsplash.png" alt="Imagen"  /> */}
-                 <img className='imagen-home' src="/cubos-pintura-suelo.jpg" alt="Latas de pintura"/>
+                 <picture>
+                    {/* Utiliza la imagen en formato WebP como fuente principal */}
+                    <source className="imagen-home" srcSet="/cubos-pintura-suelo copia.webp" type="image/webp" />
+                    {/* Agrega una imagen de respaldo en formato JPEG */}
+                    <img className="imagen-home" src="/cubos-pintura-suelo.jpg" alt="latas de pintura" />
+                </picture>
+
+
+                 {/* <img className='imagen-home' src="/cubos-pintura-suelo.jpg" alt="Latas de pintura"/> */}
                  {/* <ImagenAmpliada src="/src/images/cubos-pintura-suelo.jpg" alt="Cubos de pintura" /> */}
 
 
