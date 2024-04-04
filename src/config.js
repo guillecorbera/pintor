@@ -1,3 +1,3 @@
 
 // config.js
-export const baseUrl = '/src/images';
+export const baseUrl = '/public';
