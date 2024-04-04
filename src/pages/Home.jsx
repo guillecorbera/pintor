@@ -19,7 +19,7 @@ const Home = () => {
             </div>
             <div className="home-imagen">
                  {/* <img className="imagen-home" src="/src/images/sergey-semin-Y0WXj3xqJz0-unsplash.png" alt="Imagen"  /> */}
-                 <img className='imagen-home' src="/src/images/cubos-pintura-suelo.jpg" alt="Latas de pintura"/>
+                 <img className='imagen-home' src="/public/cubos-pintura-suelo.jpg" alt="Latas de pintura"/>
                  {/* <ImagenAmpliada src="/src/images/cubos-pintura-suelo.jpg" alt="Cubos de pintura" /> */}
 
 
