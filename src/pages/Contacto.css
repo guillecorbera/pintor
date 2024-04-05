@@ -1,6 +1,7 @@
 /* Estilos generales del formulario */
 @media only screen and (max-width: 767px) {
   .contacto{
+    animation: fadeIn 0.5s ease-in forwards;
     display: flex;
     flex-direction: column;
     
@@ -20,6 +21,7 @@
 
 @media only screen and (min-width: 768px) {
   .contacto{
+    animation: fadeIn 0.5s ease-in forwards;
     /* width: 50%; */
     display: flex;
     flex-direction: row;
